@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Rolex Watch Identifier</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>AI Rolex Watch Identifier</h1>
+      <p>Authenticate your Rolex watch using AI-powered sound analysis</p>
+    </header>
+
+    <!-- Instructions Section -->
+    <section id="instructions">
+      <h2>Instructions</h2>
+      <ol>
+        <li>Position your Rolex watch near the microphone.</li>
+        <li>Wind the watch crown for a few seconds.</li>
+        <li>
+          Click the 'Start Recording' button and continue winding for 5 seconds.
+        </li>
+      </ol>
+    </section>
+
+    <!-- Recording Section -->
+    <section id="recording">
+      <button id="start-btn">Start Recording</button>
+      <div id="countdown"></div>
+      <div id="progress" class="hidden">Recording in progress...</div>
+    </section>
+
+    <!-- Audio Playback Section -->
+    <div id="audio-controls">
+      <audio controls id="audio-player"></audio>
+      <button id="delete-btn">Delete</button>
+      <button id="send-btn">Send to Backend</button>
+    </div>
+
+    <script src="../static/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+#audio-controls{
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+div h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+ol {
+    text-align: left;
+    display: inline-block;
+    font-size: 1em;
+    color: #555;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#countdown {
+    font-size: 2em;
+    color: #f00;
+    margin-top: 20px;
+}
+
+#progress {
+    font-size: 1.2em;
+    color: #228B22;
+    margin-top: 10px;
+}
+
+#message {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#audio-controls {
+    margin-top: 20px;
+}
+audio{
+    width: 100%;
+}
