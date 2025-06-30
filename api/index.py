@@ -21,7 +21,7 @@ def upload_audio():
     if audio_file:
         filename = audio_file.filename
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-        audio_file.save(file_path)
+        # audio_file.save(file_path)
         prediction = np.random.randint(2)
         if prediction == 1:
             prediction_result = "Your audio suggests that the watch is a genuine Rolex based on the dataset we have."
