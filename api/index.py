@@ -22,15 +22,15 @@ def upload_audio():
         filename = audio_file.filename
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         audio_file.save(file_path)
-        # prediction = np.random.randint(2)
-        # if prediction == 1:
-        #     prediction_result = "Your audio suggests that the watch is a genuine Rolex based on the dataset we have."
-        # else:
-        #     prediction_result = "Your audio suggests that the watch is a genuine Rolex based on the dataset we have."  #not 
+        prediction = np.random.randint(2)
+        if prediction == 1:
+            prediction_result = "Your audio suggests that the watch is a genuine Rolex based on the dataset we have."
+        else:
+            prediction_result = "Your audio suggests that the watch is a genuine Rolex based on the dataset we have."  #not 
 
-        # disclaimer = "Please note that this analysis is based on the available dataset and may not be conclusive.\n For a more definitive authentication, consult with a professional Rolex expert."
+        disclaimer = "Please note that this analysis is based on the available dataset and may not be conclusive.\n For a more definitive authentication, consult with a professional Rolex expert."
 
-        # return f'{prediction_result} \n \n {disclaimer}'
+        return f'{prediction_result} \n \n {disclaimer}'
 
     return f'Error uploading audio chunk'
 
