@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const formData = new FormData();
         formData.append('audio', audioBlob, 'recording.webm');
 
-        fetch('https://voice-recorgnations.vercel.app/upload', {
+        fetch('https://voice-recognition-phi.vercel.app/upload', {
             method: 'POST',
             body: formData
         })
